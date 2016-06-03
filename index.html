@@ -3,8 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
+<!-- Header -->
+<div class="header"></div>
 
+<!-- Main -->
+<div class="main">
+    <!-- Page rotation -->
+    <div class="place-slider">
+        <input type="radio" name="point" id="slide1">
+        <input type="radio" name="point" id="slide2">
+        <input type="radio" name="point" id="slide3">
+        <input type="radio" name="point" id="slide4" checked>
+        <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div class="slider">
+            <div class="slides slide1"></div>
+            <div class="slides slide2">
+                <div class="system-container">
+                    <h4>Текущие настройки системы</h4>
+                    <ul>
+                        <li>IP-адреса:</li>
+                        <li>Маска подсети:</li>
+                        <li>МАС-адрес:</li>
+                    </ul>
+                    <form action="http://192.168.0.10" method="POST">
+                        <ul>
+                        <li><input type="text" name="ip1">
+                            <input type="text" name="ip2">
+                            <input type="text" name="ip3">
+                            <input type="text" name="ip4">
+                        </li>
+                        <li><input type="text" name="mask1">
+                            <input type="text" name="mask2">
+                            <input type="text" name="mask3">
+                            <input type="text" name="mask4">
+                        </li>
+                        <li><input type="text" name="mac1">
+                            <input type="text" name="mac2">
+                            <input type="text" name="mac3">
+                            <input type="text" name="mac4">
+                            <input type="text" name="mac5">
+                            <input type="text" name="mac6">
+                        </li>
+                        </ul>
+                    <h6>МАС-адрес должен содержать только цифры.</h6>
+                    <button type="submit">Изменить параментры сети</button>
+                    </form>
+                    <h6>Новые параметры будут применены после перезагрузки системы!</h6>
+                </div>
+            </div>
+            <div class="slides slide3">
+                <div class="peripheral-container">
+                    <h3>Таблица подключения периферийных каналов:</h3>
+                    <form action="http://192.168.0.10" method="post">
+                        <table class="peripheral-table">
+                            <tr>
+                                <td>Канал</td>
+                                <td>Тип подключеного канала</td>
+                                <td> КУ*</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <table class="peripheral-table">
+                            <tr>
+                                <td>Канал</td>
+                                <td>Тип подключеного канала</td>
+                                <td>КУ*</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td><select name="" id=""></select></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div>
+                            <p>* - коэффициент усиления приемного тракта.</p>
+                            <button type="submit">Изменить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slides slide4">
+                <div class="remote-controller">
+                    <form action="http://192.168.0.10" method="post">
+                        <select name="" id="">
+                            <option value="">Пульт с кнопками зарезервированными под номеронабиратель</option>
+                            <option value="">Пульт с кнопками зарезервированными под управление РС845</option>
+                            <option value="">Пульт с кнопками зарезервированными под номеронабиратель и управление РС845</option>
+                            <option value="">Пульт без резервирования кнопок</option>
+                        </select>
+                        <button type="submit">Изменить</button>
+                    </form>
+                    <form action="http://192.168.0.10" method="post">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                        <button type="submit">Изменить</button>
+                    </form>
+                    <p>Для подключения канала щелкните по соответствующей кнопке.</p>
+                    <div class="controller-container">
+                        <div class="rem-con-table">
+                            <div class="line1 first-td"><div class="led"></div>Канал 1</div>
+                            <div class="line1 but-p"><div class="led"></div>Канал 2</div>
+                            <div class="line1 but-p"><div class="led"></div>Канал 3</div>
+                            <div class="line1 but-p"><div class="led"></div>Канал 4</div>
+                            <div class="line1 but-p"><div class="led"></div>Канал 29</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 5</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 6</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 7</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 8</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 30</div>
+                            <div class="line2 but-i"></div>
+                            <div class="line2 but-s"><div class="led-green"></div>ГРОМЧЕ</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 9</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 10</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 11</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 12</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 31</div>
+                            <div class="line2 but-s"><div class="led-green"></div>КОНФЕР</div>
+                            <div class="line2 but-s"><div class="led-green"></div>ТИШЕ</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 13</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 14</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 15</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 16</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 32</div>
+                            <div class="line2 but-s"><div class="led-green"></div>МИК.</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 17</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 18</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 19</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 20</div>
+                            <div class="line2 but-p"><div class="led"></div></div>
+                            <div class="line2 but-s"><div class="led-green"></div>PAUSE</div>
+                            <div class="line2 but-s"><div class="led-green"></div>СБРОС</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 21</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 22</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 23</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 24</div>
+                            <div class="line2 but-p"><div class="led"></div></div>
+                            <div class="line2 but-s"><div class="led-green"></div>REDIAL</div>
+                            <div class="line2 first-td"><div class="led"></div>Канал 25</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 26</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 27</div>
+                            <div class="line2 but-p"><div class="led"></div>Канал 28</div>
+                            <div class="line2 but-p"><div class="led"></div></div>
+                            <div class="line2 but-s"><div class="led-green"></div>КАНАЛ</div>
+                            <div class="line2 but-s"><div class="led-green"></div>ТАНГ.</div>
+                        </div>
+                        <p>* Красным выделены каналы не установленные в системе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer"></div>
 </body>
 </html>
